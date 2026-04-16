@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { data } from "./data";
 import {
   PieChart,
@@ -36,10 +37,19 @@ export default function Dashboard() {
   return (
     <div className="bg-gray-100 min-h-screen py-10">
       <div className="max-w-6xl mx-auto px-6 space-y-10">
-
-        <h1 className="text-3xl font-bold text-gray-800">
-          FoodieClub Reddit Campaign - Week 1
-        </h1>
+        <div className="flex items-center gap-4">
+          <Image
+            src="/fast-food.png"
+            alt="FoodieClub logo"
+            width={48}
+            height={48}
+            className="rounded-md"
+            priority
+          />
+          <h1 className="text-3xl font-bold text-gray-800">
+            FoodieClub Reddit Campaign - Week 1
+          </h1>
+        </div>
 
         <p className="text-sm text-gray-500 mt-1">
           Early indicators show a shift in user perception and trust formation
